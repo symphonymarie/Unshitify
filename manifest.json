@@ -1,0 +1,24 @@
+{
+  "manifest_version": 1,
+  "name": "Unshitify-Searches",
+  "version": "1.0",
+  "description": "Show only search results prior to the Great AI Enshitiffication (Pre-2021).",
+  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/chill-out",
+  "icons": {
+    "48": "icons/unshit-48.png"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "page_action": {
+    "default_icon": "icons/unshit-32.png",
+    "default_title": "Unshitify"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
