@@ -1,0 +1,1 @@
+javascript: window.location = location.href + 'search options&df=1989-01-01..2021-09-09';
