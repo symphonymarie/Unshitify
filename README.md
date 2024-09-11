@@ -1,6 +1,6 @@
 <hr />
 
-# **UNSHITIFY** | Firefox Extension
+# **UNSHITIFY** | Firefox Extension / Bookmarklets
 
 
 Adds a new page action that, when clicked, filters search to show only results prior to the Great AI Enshitiffication (Pre-2022).
