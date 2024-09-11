@@ -1,0 +1,1 @@
+ window.location = location.href + '&tbs=cdr%3A1%2Ccd_min%3A1989%2Ccd_max%3A2021&tbm=';
