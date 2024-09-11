@@ -1,14 +1,18 @@
-# Unshitify
+<hr />
 
-## What it does
-Firefox Extension that adds a new page action. 
-When clicked, the page action filters search to show only results prior to the Great AI Enshitiffication (Pre-2022).
+# **UNSHITIFY** | Firefox Extension
 
-## Currently Supported Engines
+
+Adds a new page action that, when clicked, filters search to show only results prior to the Great AI Enshitiffication (Pre-2022).
+<hr />
+
+## ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png)  Currently Supported Engines ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png) 
 * DuckDuckGo
 * Google Search
 
-## Modification Examples
+<hr />
+  
+## ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png)  Modification Examples ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png) 
 
 
 ### Modifying the date range
