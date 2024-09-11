@@ -1,2 +1,67 @@
 # Unshitify
-Firefox Extension: Show only search results prior to the Great AI Enshitiffication (Pre-2021).
+
+## What it does
+Firefox Extension that adds a new page action. 
+When clicked, the page action filters search to show only results prior to the Great AI Enshitiffication (Pre-2022).
+
+## Currently Supported Engines
+* DuckDuckGo
+* Google Search
+
+## Modification Examples
+
+
+### Modifying the date range
+
+For DuckDuckGo, change the values in line 9 (denoted by YMD) to your preferred range.
+>
+> #### Here is the default range: 1989-01-01 - 2021-12-31.
+> ```js
+> window.location = location.href + 'search options&df=1989-01-01..2021-12-31';
+> 
+
+>
+> #### Here is an example, modified to show results from 1989-01-01 - 2022-12-31.
+> ```js
+> window.location = location.href + 'search options&df=1989-01-01..2022-12-31';
+> 
+
+For Google, change the values in line 12 (denoted by year) to your preferred range.
+>
+> #### Here is the default range: 1989 - 2021.
+> ```js
+> window.location = location.href + '&tbs=cdr%3A1%2Ccd_min%3A1989%2Ccd_max%3A2021&tbm=';
+> 
+
+>
+>  #### And an example, modified to show results from 1989 - 2022.
+> ```js
+> window.location = location.href + '&tbs=cdr%3A1%2Ccd_min%3A1989%2Ccd_max%3A2022&tbm=';
+>
+
+
+### Adding a new engine
+
+To add a new engine, define a Engine and determine the URL format for date ranges. This is typically appended onto the end of a search query somewhere in the URL. Here is an example you can use to input your own information.
+> ```js
+> let Engine1 = "https://www.duckduckgo.com/";
+> let Engine2 = "https://www.google.com/";
+> let Engine3 = "https://www.MYNEWENGINE.com/";
+> /*
+> On page action click, filter search results.
+> */
+> browser.pageAction.onClicked.addListener(() => {
+>   if (tab.url = string.includes(Engine1, 0)) {
+>     window.location = location.href + 'search options&df=1989-01-01..2021-12-31';
+>   }
+>   if (tab.url = string.includes(Engine2, 0)) {
+>     window.location = location.href + '&tbs=cdr%3A1%2Ccd_min%3A1989%2Ccd_max%3A2021&tbm=';
+>   }
+>   if (tab.url = string.includes(Engine3, 0)) {
+>     window.location = location.href + 'MYNEWENGINEURLFORMAT';
+>   }
+> });
+
+
+     
+***
