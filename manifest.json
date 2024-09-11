@@ -1,24 +1,31 @@
 {
-  "manifest_version": 1,
+  "manifest_version": 2,
   "name": "Unshitify-Searches",
   "version": "1.0",
   "description": "Show only search results prior to the Great AI Enshitiffication (Pre-2021).",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/chill-out",
+"permissions": [
+    "tabs",
+    "activeTab"
+  ],
+  "homepage_url": "https://github.com/symphonymarie/Unshitify",
   "icons": {
     "48": "icons/unshit-48.png"
   },
-
-  "permissions": [
-    "tabs"
-  ],
-
+  "browser_specific_settings": {
+  "gecko": {
+    "id": "extension@example.com"
+    }
+  },
   "page_action": {
+    "browser_style": true,
     "default_icon": "icons/unshit-32.png",
     "default_title": "Unshitify"
   },
-
+  "browser_action": {
+    "default_icon": "icons/unshit-32.png",
+    "default_title": "Unshitify"
+    },
   "background": {
     "scripts": ["background.js"]
   }
-
 }
