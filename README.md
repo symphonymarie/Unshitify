@@ -57,20 +57,36 @@ To add a new engine, define an Engine and determine the URL format for date rang
 > /*
 > On page action click, filter search results.
 > */
-> browser.pageAction.onClicked.addListener(() => {
->   if (tab.url = string.includes(Engine1, 0)) {
->     browser.pageAction.show(tab.id);
->     newurl = tab.url + 'search options&df=1989-01-01..2021-12-31';
->   }
->   if (tab.url = string.includes(Engine2, 0)) {
->     browser.pageAction.show(tab.id);
->     newurl = tab.url + '&tbs=cdr%3A1%2Ccd_min%3A1989%2Ccd_max%3A2021&tbm=';
->   }
->   if (tab.url = string.includes(Engine3, 0)) {
->     browser.pageAction.show(tab.id);
->     newurl = tab.url + 'MYNEWENGINEURLFORMAT';
->   }
-> });
+> browser.pageAction.onClicked.addListener(onClick);
+> if (tab.url.includes(Engine1)) {
+>    if (tab.url.includes(String1)) {
+>    browser.pageAction.hide(tab.id);
+>    }
+>    else {
+>      browser.pageAction.show(tab.id);
+>      }
+>    newurl = tab.url + 'search options&df=1989-01-01..2021-12-31';
+>  }
+>  if (tab.url.includes(Engine2)) {
+>      if (tab.url.includes(String2)) {
+>        browser.pageAction.hide(tab.id);
+>      }
+>      else {
+>        browser.pageAction.show(tab.id);
+>        }
+>    newurl = tab.url + '&tbs=cdr%3A1%2Ccd_min%3A1989%2Ccd_max%3A2021&tbm=';
+>  }
+> }
+>  if (tab.url.includes(Engine3)) {
+>      if (tab.url.includes(String3)) {
+>        browser.pageAction.hide(tab.id);
+>      }
+>      else {
+>        browser.pageAction.show(tab.id);
+>        }
+>    newurl = tab.url + 'MYNEWENGINEURLFORMAT';
+>  }
+> }
 
 
      
