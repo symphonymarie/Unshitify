@@ -51,7 +51,7 @@ function onClick() {
 browser.pageAction.onClicked.addListener(Unshit);
 
 function Unshit (){
-    browser.tabs.create({
+    browser.tabs.update({
       "url": newurl,
     });
   }
