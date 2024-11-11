@@ -46,11 +46,14 @@ For Google, change the values in line 17 (denoted by year) to your preferred ran
 
 ### Adding a new engine
 
-To add a new engine, define a Engine and determine the URL format for date ranges. This is typically appended onto the end of a search query somewhere in the URL. Here is an example you can use to input your own information.
+To add a new engine, define an Engine and determine the URL format for date ranges. This is typically appended onto the end of a search query somewhere in the URL. Here is an example you can use to input your own information.
 > ```js
 > let Engine1 = "https://www.duckduckgo.com/";
 > let Engine2 = "https://www.google.com/";
 > let Engine3 = "https://www.MYNEWENGINE.com/";
+> let String1 = "1989-01-01"
+> let String2 = "%3A1989%"
+> let String2 = "Shortened string from MYNEWENGINEURLFORMAT"
 > /*
 > On page action click, filter search results.
 > */
