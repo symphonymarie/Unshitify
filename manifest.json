@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Unshitify-Searches",
-  "version": "1.0",
+  "version": "3.0",
   "description": "Show only search results prior to the Great AI Enshitiffication (Pre-2021).",
 "permissions": [
     "tabs",
