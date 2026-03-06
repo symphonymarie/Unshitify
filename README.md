@@ -9,8 +9,9 @@ Adds a new page action that, when clicked, filters search to show only results p
 ## ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png)  Currently Supported Engines ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png) 
 * DuckDuckGo
 * Google Search
+<hr />
 
-### Also recommended: [uBlockOrigin AI Blocklist](https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist)
+##### Also recommended: [uBlockOrigin AI Blocklist](https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist)
 
 <hr />
   
