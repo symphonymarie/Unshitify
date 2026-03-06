@@ -10,6 +10,8 @@ Adds a new page action that, when clicked, filters search to show only results p
 * DuckDuckGo
 * Google Search
 
+# Also recommended: [uBlockOrigin AI Blocklist](https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist)
+
 <hr />
   
 ## ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png)  Modification Examples ![An icon of a plunger.](https://github.com/symphonymarie/Unshitify/blob/main/icons/unshit-48.png) 
