@@ -10,7 +10,7 @@ Adds a new page action that, when clicked, filters search to show only results p
 * DuckDuckGo
 * Google Search
 
-# Also recommended: [uBlockOrigin AI Blocklist](https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist)
+### Also recommended: [uBlockOrigin AI Blocklist](https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist)
 
 <hr />
   
