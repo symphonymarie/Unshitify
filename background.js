@@ -1,5 +1,6 @@
 let Engine1 = "duckduckgo.com/";
 let Engine2 = "https://www.google.com/";
+let Engine3 = "brave.com/";
 let StartDate = "1989-01-01"
 let EndDate = "2021-12-31"
 let String2 = "%3A1989%"
@@ -29,6 +30,15 @@ function initializePageAction(tab) {
       }
   newurl = tab.url + '&tbs=cdr%3A1%2Ccd_min%3A1989%2Ccd_max%3A2021&tbm=';
 }
+  if (tab.url.includes(Engine3)) {
+    if (tab.url.includes(StartDate)) {
+    browser.pageAction.hide(tab.id);
+    }
+    else {
+      browser.pageAction.show(tab.id);
+      }
+      newurl = tab.url + '&tf=' + (StartDate) + 'to' + (EndDate);
+  }
 }
 
 var gettingAllTabs = browser.tabs.query({});

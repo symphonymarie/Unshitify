@@ -3,7 +3,7 @@
   "name": "Unshitify-Searches",
   "version": "3.0",
   "description": "Show only search results prior to the Great AI Enshitiffication (Pre-2021).",
-"permissions": [
+  "permissions": [
     "tabs",
     "activeTab"
   ],
@@ -12,8 +12,13 @@
     "48": "icons/unshit-48.png"
   },
   "browser_specific_settings": {
-  "gecko": {
-    "id": "extension@example.com"
+    "gecko": {
+      "id": "extension@example.com",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
     }
   },
   "page_action": {
@@ -24,8 +29,10 @@
   "browser_action": {
     "default_icon": "icons/unshit-32.png",
     "default_title": "Unshitify"
-    },
+  },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   }
 }
